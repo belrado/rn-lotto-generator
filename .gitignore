@@ -142,3 +142,4 @@ app.playground.js
 app.admob.js
 app.json
 firebase.json
+app.config.js
