@@ -2,7 +2,7 @@ import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, View, Platform } from 'react-native';
 import { ChildrenProps, ContainerProps } from '@/types/common.ts';
 import Header from '@/components/layout/Header';
-import { AppTitle } from '@/config/constants.ts';
+import { APP_TITLE } from '@/config/constants.ts';
 
 function ContainerInner({ children }: ChildrenProps) {
   return (
@@ -17,7 +17,7 @@ export default function Container({ title, children, scroll = false }: Container
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar animated={true} hidden={false} barStyle={statusBarStyle} />
-      <Header title={title ? title : AppTitle} />
+      <Header title={title ? title : APP_TITLE} />
       {scroll ? (
         <ScrollView>
           <ContainerInner children={children} />

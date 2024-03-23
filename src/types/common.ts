@@ -41,8 +41,15 @@ export interface BallProps {
   bonus: boolean;
 }
 
+export interface TokenRequiredProps {
+  jwt: string;
+  jwtExpire: string;
+  refresh: string;
+  push: string;
+}
 export interface TokenProps {
   jwt?: string;
+  jwtExpire?: string;
   refresh?: string;
   push?: string;
 }
