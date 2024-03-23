@@ -1,4 +1,8 @@
 {
   "name": "belradoLottoGenerator",
   "displayName": "belradoLottoGenerator",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-",
+    "ios_app_id": "ca-app-pub-"
+  }
 }
