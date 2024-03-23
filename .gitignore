@@ -32,12 +32,29 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
+# Gradle files
+.gradle/
+# Signing files
+.signing/
+# Generated files
+bin/
+gen/
+out/
 # node.js
 #
 node_modules/
 npm-debug.log
 yarn-error.log
-
+# Android Studio
+/*/build/
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.ipr
+*~
+*.swp
+/out/
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
@@ -57,10 +74,71 @@ yarn-error.log
 /ios/Pods/
 /vendor/bundle/
 
-/android/app/google-services.json
-
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
 
 # testing
 /coverage
+
+
+google-services.json
+GoogleService-Info.plist
+
+# User-specific configurations
+.idea/caches/
+.idea/libraries/
+.idea/shelf/
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Package Files #
+*.war
+*.ear
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# dotenv environment variables file
+.env
+
+## User settings
+xcuserdata/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+### Xcode Patch ###
+*.xcodeproj/*
+Pods/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+
+# generated files
+RNFBVersion.m
+ReactNativeFirebaseVersion.java
+
+appPlaygrounds/
+app.playground.js
+app.admob.js
+app.json
+firebase.json
