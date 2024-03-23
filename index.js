@@ -8,7 +8,6 @@ import { setToken } from '@/asyncStorage/encrypted';
 
 messaging().setBackgroundMessageHandler(async remoteMessage => {
   console.log('background', remoteMessage, remoteMessage.notification.body);
-  await setToken({ push: remoteMessage.notification.body });
 });
 
 const AppRoot = () => {
